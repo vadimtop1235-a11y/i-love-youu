@@ -1,0 +1,35 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Для тебя 🩵</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial;
+    background: black;
+    color: white;
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  #yes {
+    background: #ff4da6; /* розово-сердечный цвет */
+  }
+  #no {
+    background: #444;
+  }
