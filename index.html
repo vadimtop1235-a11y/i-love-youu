@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Для тебя 🩵</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial;
+    background: black;
+    color: white;
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  #yes {
+    background: #ff4da6; /* розово-сердечный цвет */
+  }
+  #no {
+    background: #444;
+  }
+
+.rainbow {
+animation: rainbow 2s infinite;
+}
+
+@keyframes rainbow {
+0% { color: #ff4da6; }
+25% { color: #ff66cc; }
+50% { color: #ff99dd; }
+75% { color: #ff66cc; }
+100% { color: #ff4da6; }
+} </style>
+
+</head>
+
+<body>
+
+<h1>я тебя люблю 🩷<br>ты тоже?</h1>
+
+<img src="https://i.imgur.com/4AiXzf8.jpeg">
+
+<br>
+
+<button id="yes" onclick="yes()">Да 🩷</button> <button id="no" onclick="no()">Нет</button>
+
+<script>
+function yes() {
+  document.body.innerHTML = `
+    <h1 class="rainbow">я знал 😏<br><br>иди ко мне 🩷</h1>
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+  `;
+}
+
+function no() {
+  document.body.innerHTML = `
+    <h1>не врёшь ведь? 😏<br><br>подумай ещё раз</h1>
+    <img src="https://i.imgur.com/Z6XK7gT.jpeg">
+    <br>
+    <button onclick="yes()">ладно да 🩷</button>
+  `;
+}
+</script>
+
+</body>
+</html>
